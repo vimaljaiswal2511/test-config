@@ -1,12 +1,12 @@
 server:
    port: 8760
- logging:
+logging:
    logLevel:
      elfLevel: INFO
    level:
      ROOT: INFO
      com.amex: INFO
- service-manager:
+service-manager:
    serviceConfig:
      ############## CSRT Core Processes: #############
      discovery:
