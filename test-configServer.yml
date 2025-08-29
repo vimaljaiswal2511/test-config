@@ -1,0 +1,27 @@
+server:
+  port: 8760
+logging:
+  logLevel:
+    elfLevel: INFO
+  level:
+    ROOT: INFO
+    com.amex: INFO
+configServer:
+  serviceConfig:
+     ############## CSRT Core Processes: #############
+    discovery:
+      discovery-client: true
+      version: "2.0.41-SNAPSHOT"
+      ports:
+      - "8761"
+    router:
+      discovery-client: true
+      version: "2.0.41"
+      ports:
+      - "8765"
+    qs-reg-service:
+      discovery-client: true
+      version: "2.0.41-SNAPSHOT"
+    qs-exec-service:
+      discovery-client: true
+      version: "2.0.41-SNAPSHOT"
